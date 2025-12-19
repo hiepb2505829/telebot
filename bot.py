@@ -13,7 +13,7 @@ TELEGRAM_TOKEN = '8562616165:AAFucsz61WmelMnjHFm5NjRJCe6aeTeeqk4'
 CHAT_ID = 6335578454
 
 # ================== KẾT NỐI BINANCE ==================
-exchange = ccxt.binance({
+exchange = ccxt.bybit({
     'enableRateLimit': True,
     'options': {'defaultType': 'future'}
 })
@@ -115,3 +115,4 @@ while True:
             print(symbol, e)
 
     time.sleep(CHECK_INTERVAL)
+
